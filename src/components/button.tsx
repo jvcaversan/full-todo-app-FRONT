@@ -4,8 +4,8 @@ import { Box, Text } from "utils/theme";
 
 const Button = () => {
   return (
-    <Box bg="blu200" p="4" borderRadius="rounded-3xl">
-      <Text>Button or Components Update</Text>
+    <Box bg="primary" p="4" borderRadius="rounded-3xl">
+      <Text color="white">Button or Components Update</Text>
     </Box>
   );
 };
