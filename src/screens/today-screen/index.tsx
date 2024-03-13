@@ -1,11 +1,14 @@
+import SafeAreaWrapper from "components/shared/safe-area-wrapper";
 import React from "react";
 import { Box, Text } from "utils/theme";
 
 const TodayScreen = () => {
   return (
-    <Box>
-      <Text>Today</Text>
-    </Box>
+    <SafeAreaWrapper>
+      <Box>
+        <Text>Today</Text>
+      </Box>
+    </SafeAreaWrapper>
   );
 };
 

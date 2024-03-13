@@ -1,14 +1,14 @@
-import { useNavigation } from "@react-navigation/native";
-import { AuthScreenNavigationType } from "navigation/types";
+import SafeAreaWrapper from "components/shared/safe-area-wrapper";
 import React from "react";
-import { Button } from "react-native";
 import { Box, Text } from "utils/theme";
 
 const CompletedScreen = () => {
   return (
-    <Box>
-      <Text>Completed</Text>
-    </Box>
+    <SafeAreaWrapper>
+      <Box>
+        <Text>Completed</Text>
+      </Box>
+    </SafeAreaWrapper>
   );
 };
 
