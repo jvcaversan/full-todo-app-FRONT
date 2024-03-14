@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
-import { AppStackParamList, AuthStackParamList } from "./types";
+import { AppStackParamList } from "./types";
 import BottomTabNavigator from "./bottom-tab-navigator";
 
 const Stack = createNativeStackNavigator<AppStackParamList>();

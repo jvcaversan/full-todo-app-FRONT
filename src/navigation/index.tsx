@@ -5,14 +5,7 @@ import AppStackNavigator from "./app-stack-navigator";
 import useUserGlobalStore from "store/useUserGlobalStore";
 
 const Navigation = () => {
-  const { user, updateUser } = useUserGlobalStore();
-  console.log(`user`, JSON.stringify(user, null, 2));
-
-  useEffect(() => {
-    updateUser(null);
-
-    return () => {};
-  }, []);
+  const { user } = useUserGlobalStore();
 
   return (
     <NavigationContainer>

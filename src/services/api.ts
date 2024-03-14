@@ -28,8 +28,9 @@ export const loginUser = async ({ email, password }: LoginUserTypes) => {
       email,
       password,
     });
-    const _token = String(response.data._token);
+    const _token = String(response.data.token);
     saveToken(BLOSSOM_TOKEN_NAME, _token);
+    axiosInstance.defaults.headers.common["Authorization"] = _token;
     return response.data.user;
   } catch (error) {
     console.log("erro ao registrar usuario", error);
