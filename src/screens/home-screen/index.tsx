@@ -6,7 +6,7 @@ import { Box, Text } from "utils/theme";
 
 const HomeScreen = () => {
   const { data, isLoading } = useSWR("category", fetcher);
-  console.log(`data`, JSON.stringify(data, null, 2));
+  // console.log(`data`, JSON.stringify(data, null, 2))
 
   return (
     <SafeAreaWrapper>

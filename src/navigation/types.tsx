@@ -28,7 +28,7 @@ export type CategoriesStackParamList = {
     id: string;
   };
   CreateCategory: {
-    id?: string;
+    category?: ICategory;
   };
 };
 
@@ -54,3 +54,9 @@ export type AuthScreenNavigationType<
   NativeStackNavigationProp<AuthStackParamList, RouteName>,
   NativeStackNavigationProp<AppStackParamList, "Root">
 >;
+
+export type CategoriesNavigationType =
+  NativeStackNavigationProp<CategoriesStackParamList>;
+
+export type HomeScreenNavigationType =
+  NativeStackNavigationProp<HomeStackParamList>;
